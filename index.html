@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dry point  </title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://www.dafontfree.net/embed/bWFpYW5kcmEtZ2QtcmVndWxhciZkYXRhLzMyL20vMTUyNDQwL01haWFuZHJhIEdEIFJlZ3VsYXIudHRm" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/animate.css">
+</head>
+<body>
+    
+    <div class="home" id="home">
+        <div id="particles-js"></div>
+
+        <div class="bar">
+            <img src="images/logo.png" class="logo" alt="Yehia Mohammed Logo">
+
+            <div class="links">
+            
+                <a  href="#home"><i class="fas fa-home"></i> Home</a>
+                <a  href="#projects"><i class="fas fa-boxes"></i> Projects</a>
+                <a  href="#skills"><i class="fas fa-land-mine-on"></i> Skills</a>
+                <a  href="#contact"><i class="fas fa-phone"></i> Contact</a>
+            
+            </div>
+        </div>
+        
+        <div class="person">
+            <img src="images/user.png"  class="wow bounceInDown" alt="Yehia Moahmmed Main Image" >
+            <p class="wow bounceInRight">Hello I'm <span class="big">Yahia Mohamed </span>And I'm </p>
+            <p class="wow bounceInLeft"><span class="big">Graphics Designer </span> & <span class="big">Software Engineer 
+            
+            </span></p>
+        </div>
+        
+
+        
+    </div>
+
+
+
+    <div class="projects" id="projects">
+
+        <h1 class="title wow bounceInDown" >Projects</h1>
+        
+
+        <div class="list">
+
+            <div class="proj wow bounceInLeft">
+                <img src="images/d.jpg" alt="">
+            </div>
+            
+            <div class="proj wow bounceInLeft">
+                <img src="images/zz.jpg" alt="">
+            </div>
+
+            <div class="proj wow bounceInLeft">
+                <img src="images/s.jpg" alt="">
+            </div>
+            
+            <div class="proj wow bounceInLeft">
+                <img src="images/ss.jpg" alt="">
+            </div>
+            
+            <div class="proj wow bounceInLeft">
+                <img src="images/a.png" alt="">
+            </div>
+            
+            <div class="proj wow bounceInLeft">
+                <img src="images/551.jpg" alt="">
+            </div>
+            
+            <div class="proj wow bounceInLeft">
+                <img src="images/588.jpg" alt="">
+            </div>
+
+            <div class="proj wow bounceInLeft">
+                <img src="images/111.jpg" alt="">
+            </div>
+
+            <div class="proj wow bounceInLeft">
+                <img src="images/33.png" alt="">
+            </div>
+
+            <div class="proj wow bounceInLeft">
+                <img src="images/3.jpg" alt="">
+            </div>
+
+            <div class="proj wow bounceInLeft">
+                <img src="images/333.png" alt="">
+            </div>
+
+            <div class="skill wow bounceInUp">
+                <a href="https://wsend.co/201005101524" target="_blank" class="skill">لمشاهدة باقي التصميمات</a>
+            </div>
+            
+
+         
+
+
+        </div>
+
+    </div>
+
+
+    <div class="skills" id="skills">
+
+        <h1 class="title wow bounceInDown">skills</h1>
+
+
+        <div class="list">
+
+            <div class="skill wow bounceInUp">
+                PhotoShop
+            </div>
+
+            <div class="skill wow bounceInUp">
+                illustrator
+            </div>
+
+            <div class="skill wow bounceInUp">
+                Frontend
+            </div>
+
+            <div class="skill wow bounceInUp">
+                Excel
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+    <div class="contact" id="contact">
+
+        <h1 class="title wow bounceInDown">Contact</h1>
+
+        <div class="contact-list">
+        
+            <a class="wow bounceInLeft" href="https://www.facebook.com/profile.php?id=100007151985576"  target="_blank" ><i class="fa-brands fa-facebook "></i></a>
+            <a class="wow bounceInLeft" href="https://wh.ms/201005101524" target="_blank" ><i class="fa-brands fa-whatsapp "></i></a>
+            <a class="wow bounceInLeft" href="#" target="_blank" ><i class="fa-brands fa-linkedin "></i></a>
+            <a class="wow bounceInLeft" href="https://www.instagram.com/yahia_mohamed11/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" ><i class="fa-brands fa-instagram "></i></a>
+   
+            <a class="wow bounceInLeft" href="https://www.tiktok.com/@yahiamohamed11111?_t=8epMDP2ypFu&_r=1" target="_blank" ><i class="fa-brands fa-tiktok "></i></a>
+        
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        Designed and developed by yahia mohamed ©2023
+    </footer>
+    
+    <script src="particles.js/particles.min.js"></script>
+    <script src="wow.js"></script>
+    
+    <script >
+                
+        new WOW().init();
+
+        particlesJS.load('particles-js', 'particles.js/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+
+        var bar = document.querySelector('.bar');
+
+        document.addEventListener('scroll', () => {
+            
+            const vertical = window.scrollY   
+
+            if (vertical >= 700){
+                bar.classList.add('fixed')
+            }else{
+                bar.classList.remove('fixed')
+            }
+            
+        })
+    </script>
+    
+
+</body>
+</html>
